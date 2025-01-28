@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+@font-face {
+    font-family: norse-bold;
+    src: url(fonts/webfontkit-20250128-031824/norse-bold-webfont.woff),
+    url(fonts/webfontkit-20250128-031824/norse-bold-webfont.woff2);
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: #F9FAFB;
+    display: flex;
+}
+
+.flex {
+    display: flex;
+    gap: 60px;
+}
+
+
+/* Logo container */
+.leaf {
+    background-image: url(media/halie-west-25xggax4bSA-unsplash.jpg);
+    min-height: 100vh;
+    width: 33%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: fixed;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding: 20px;
+}
+
+div.logo-container {
+    background-color: rgb(0, 0, 0, 0.3);
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px;
+    top: 13rem;
+}
+
+div.logo-container > p {
+    font-family: norse-bold;
+    color: white;
+    font-size: 6.3rem;
+}
+
+
+div.logo-container > img {
+    width: 100px;
+}
+
+div.leaf > p {
+    color: white;
+}
+
+div.leaf > p > a {
+    color: white;
+}
+
+/* Form section */
+.form-container {
+    width: 77%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* heading */
+.heading {
+    width: 94ch;
+    padding: 20px 0px 30px 50px;
+}
+
+.heading p {
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.heading > p + p + p {
+    padding-top: 30px;
+}
+
+p span {
+    font-style: italic;
+}
+
+/* form */
+div.form {
+    width: 100%;
+    background-color: white;
+    padding: 20px 300px 40px 50px;
+    box-shadow: 0 1px 5px -1px gray;
+}
+
+.form > h2 {
+    color: #1F2937;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+input,
+label {
+    display: block;
+}
+
+label {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #1F2937;
+    letter-spacing: 1px;
+}
+
+input {
+    border-radius: 3px;
+    border: 1px solid #E5E7EB;
+    width: 20em;
+    height: 2.3em;
+    padding: 5px;
+}
+
+input:invalid {
+    border: 1px solid red;
+}
+
+input:focus {
+    border: 1px solid blue;
+    outline: none;
+    box-shadow: 0 2px 7px 0px grey;
+}
+
+/* buttons */
+.buttons-container {
+    padding: 20px 0px 30px 50px;
+    margin-top: 20px;
+}
+
+button[type="submit"] {
+    background-color: #596D48;
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+    border: none;
+    padding: 13px 50px;
+    border-radius: 5px;
+    box-shadow: 0 2px 7px 0px grey;
+    margin-bottom: 40px;
+    cursor: pointer;
+}
+
+button[type="submit"] + p {
+    font-weight: 550;
+}
+
+button[type="submit"] + p > a {
+    font-style: normal;
+    text-decoration: none;
+    color: green;
+}

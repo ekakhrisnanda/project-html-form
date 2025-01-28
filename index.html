@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project: Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="leaf">
+        <div class="logo-container">
+            <img src="media/odin-lined.png" alt="odin-logo">
+            <p>ODIN</p>
+        </div>
+        <p>Photo by <a href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA">Halie West</a> on <a href="https://unsplash.com/">Unsplash</a></p>
+    </div>
+
+    <div class="form-container">
+        <div class="heading">
+            <p>This is not a real online service! 
+                You know you need something like this in your life to
+                help you realize your deepest dreams.
+            </p>
+            <p>Sign up <span>now</span> to get started.</p>
+            <p>You <span>know</span> you want to.</p>
+        </div>
+
+        <div class="form">
+            <h2>Let's do this!</h2>
+            <form action="" method="get" id="form-1">
+                <div class="name flex">
+                    <p>
+                        <label for="first-name">FIRST NAME</label>
+                        <input type="text" id="first-name" name="first-name" minlength="3" maxlength="20"/>
+                    </p>
+
+                    <p>
+                        <label for="last-name">LAST NAME</label>
+                        <input type="text" id="last-name" name="last-name" minlength="3" maxlength="20" />
+                    </p>
+                </div>
+
+                <div class="contact flex">
+                    <p>
+                        <label for="email">EMAIL</label>
+                        <input type="email" id="email" name="email" />
+                    </p>
+
+                    <p>
+                        <label for="phone">PHONE NUMBER</label>
+                        <input type="tel" id="phone" name="phone" minlength="12"/>
+                    </p>
+                </div>
+
+                <div class="password flex">
+                    <p>
+                        <label for="pass">PASSWORD</label>
+                        <input type="password" id="pass" name="pass" required />
+                    </p>
+
+                    <p>
+                        <label for="confirm-pass">CONFIRM PASSWORD</label>
+                        <input type="password" id="confirm-pass" name="confirm-pass" required/>
+                    </p>
+                </div>
+            </form>
+        </div>
+        <div class="buttons-container">
+            <button type="submit" form="form-1" value="submit">Create Account</button>
+            <p>Already have an account? <a href="">Log in</a></p>
+        </div>
+    </div>
+</body>
+</html>
